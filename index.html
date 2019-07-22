@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercise 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+        <div class="container">
+            <div class="row">
+            <center>
+                <h1>List of Planets</h1>
+            </center>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+        </div>
+        <div class="col-md-5">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Filter</span>
+                </div>
+                <input type="text" class="form-control" oninput="f_filter()" placeholder="Cari Planet" id="filter">
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                        <table class="table table-group-bordered">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Rotation Periode</th>
+                                    <th scope="col">Orbital Periode</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Climate</th>
+                                    <th scope="col">Gravity</th>
+                                    <th scope="col">Terrain</th>
+                                    <th scope="col">Surface Water</th>
+                                    <th scope="col">Population</th>
+                                  </tr>
+                                </thead>
+                                <tbody id = "isidata"></tbody>
+                                </table>
+                </div>
+            </div>
+        </div>
+    <hr>
+    </div>
+    <script src="list.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+html,body {
+                background: url(planet.jpg) no-repeat center center fixed;
+                -webkit-background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+                -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+                color: white;
+            }
+
+            tbody {
+                color: white;
+            }
+select {
+    padding: 5px 20px;
+}
+table th, table td {
+    padding: 5px;
+}
